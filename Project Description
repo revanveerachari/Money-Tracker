@@ -1,0 +1,65 @@
+Project Description: Money Tracker Web Application with User Authentication
+The Money Tracker Web Application is a simple, yet powerful tool designed to help users track their financial transactions.
+This web application is built with modern web technologies and offers features such as user authentication (sign-up and login), local data storage, and a clean, user-friendly interface for managing income and expenses.
+
+Key Features:
+User Authentication:
+
+Users can sign up by creating a new account with a username, email, and password.
+Registered users can log in securely using their credentials to access their personal financial data.
+Money Tracking:
+
+Once logged in, users can easily add, view, and manage their financial transactions.
+The app allows users to categorize transactions as either Income or Expense, and they can specify the date, description, and amount.
+Local Data Storage:
+
+All user data, including account information and financial transactions, are stored locally in the user's browser using localStorage.
+Transactions are persistently saved even after the user reloads the page or closes the browser.
+User-Friendly Interface:
+
+The app features a clean and intuitive interface, making it easy for users to input and manage their financial records.
+Users can view all transactions in a table, with the ability to delete any entry.
+Security and Privacy:
+
+User authentication ensures that only authorized users can access their financial records.
+Data is securely stored in localStorage, which is isolated to each individual user's browser and is not shared with external servers.
+Responsive Design:
+
+The app is designed to be mobile-friendly, ensuring that it can be used on any device, whether it's a desktop, tablet, or smartphone.
+Technologies Used:
+Frontend:
+
+HTML5: Provides the basic structure for the web pages.
+CSS3: Used for styling the app and creating a responsive layout.
+JavaScript: Implements the core logic, including form submission, authentication, transaction management, and localStorage operations.
+LocalStorage:
+
+Used to persist user account and transaction data on the client side (in the browser). This eliminates the need for an external database, making it ideal for smaller-scale applications or personal use.
+Optional Integrations:
+
+Google Sheets API or Google Apps Script: For integrating with Google Sheets to store and manage transactions.
+SheetJS Library: For exporting transaction data into an Excel file for offline tracking.
+
+How It Works:
+Sign-Up Process:
+
+Users create an account by entering their username, email, and password on the sign-up page.
+The app checks if the email is already registered, and if not, the user information is stored in localStorage.
+After successful registration, users are redirected to the login page.
+Login Process:
+
+Users log in by entering their registered email and password.
+The system verifies the credentials stored in localStorage and grants access to the user's financial dashboard if the login is successful.
+Money Tracker:
+
+Once logged in, users are presented with a form to add new transactions.
+Users can specify the date, description, amount, and category (income or expense) for each transaction.
+Transactions are displayed in a table below the form, with the option to delete any transaction.
+Logout:
+
+Users can log out of the application at any time, which will clear the session stored in localStorage and redirect them to the login page.
+Project Goals:
+Financial Management: Help users keep track of their finances by organizing transactions into income and expenses.
+User Privacy: Ensure that all user data remains private and stored locally on their device.
+Ease of Use: Provide an intuitive interface that anyone can use, regardless of their technical background.
+Flexibility: Enable future extensions, such as integration with Google Sheets, Excel export, or even the addition of advanced features like charts and reports.
